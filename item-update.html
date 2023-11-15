@@ -28,7 +28,10 @@
 
     <!-- General Styles -->
     <link rel="stylesheet" href="./css/style.css">
-
+<!-- Agrega esto en la sección <head> de tu archivo HTML -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    
 
 </head>
 
@@ -43,9 +46,9 @@
                 <figure class="full-box nav-lateral-avatar">
                     <i class="far fa-times-circle show-nav-lateral"></i>
                     <img src="./assets/avatar/Avatar.png" class="img-fluid" alt="Avatar">
-                    <figcaption class="roboto-medium text-center">
-                        Carlos Alfaro <br><small class="roboto-condensed-light">Web Developer</small>
-                    </figcaption>
+					<figcaption class="roboto-medium text-center">
+						Admin <br><small class="roboto-condensed-light">Amasandería</small>
+					</figcaption>
                 </figure>
                 <div class="full-box nav-lateral-bar"></div>
                 <nav class="full-box nav-lateral-menu">
@@ -54,20 +57,6 @@
                             <a href="home.html"><i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard</a>
                         </li>
 
-                        <li>
-                            <a href="#" class="nav-btn-submenu"><i class="fas fa-users fa-fw"></i> &nbsp; Clientes <i class="fas fa-chevron-down"></i></a>
-                            <ul>
-                                <li>
-                                    <a href="client-new.html"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar Cliente</a>
-                                </li>
-                                <li>
-                                    <a href="client-list.html"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de clientes</a>
-                                </li>
-                                <li>
-                                    <a href="client-search.html"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar cliente</a>
-                                </li>
-                            </ul>
-                        </li>
 
                         <li>
                             <a href="#" class="nav-btn-submenu"><i class="fas fa-pallet fa-fw"></i> &nbsp; Items <i class="fas fa-chevron-down"></i></a>
@@ -75,41 +64,20 @@
                                 <li>
                                     <a href="item-new.html"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar item</a>
                                 </li>
-                                <li>
-                                    <a href="item-list.html"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de items</a>
-                                </li>
+
                                 <li>
                                     <a href="item-search.html"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar item</a>
                                 </li>
                             </ul>
                         </li>
 
-                        <li>
-                            <a href="#" class="nav-btn-submenu"><i class="fas fa-file-invoice-dollar fa-fw"></i> &nbsp; Préstamos <i class="fas fa-chevron-down"></i></a>
-                            <ul>
-                                <li>
-                                    <a href="reservation-new.html"><i class="fas fa-plus fa-fw"></i> &nbsp; Nuevo préstamo</a>
-                                </li>
-                                <li>
-                                    <a href="reservation-list.html"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de préstamos</a>
-                                </li>
-                                <li>
-                                    <a href="reservation-search.html"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; Buscar préstamos</a>
-                                </li>
-                                <li>
-                                    <a href="reservation-pending.html"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; Préstamos pendientes</a>
-                                </li>
-                            </ul>
-                        </li>
+
 
                         <li>
                             <a href="#" class="nav-btn-submenu"><i class="fas  fa-user-secret fa-fw"></i> &nbsp; Usuarios <i class="fas fa-chevron-down"></i></a>
                             <ul>
                                 <li>
                                     <a href="user-new.html"><i class="fas fa-plus fa-fw"></i> &nbsp; Nuevo usuario</a>
-                                </li>
-                                <li>
-                                    <a href="user-list.html"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de usuarios</a>
                                 </li>
                                 <li>
                                     <a href="user-search.html"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar usuario</a>
@@ -142,18 +110,14 @@
                     <i class="fas fa-sync-alt fa-fw"></i> &nbsp; ACTUALIZAR ITEM
                 </h3>
                 <p class="text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque laudantium necessitatibus eius iure adipisci modi distinctio. Earum repellat iste et aut, ullam, animi similique sed soluta tempore cum quis corporis!
-                </p>
+                    Aqui se puede actualizar el item </p>
             </div>
             <div class="container-fluid">
                 <ul class="full-box list-unstyled page-nav-tabs">
                     <li>
                         <a href="item-new.html"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR ITEM</a>
                     </li>
-                    <li>
-                        <a href="item-list.html"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE ITEMS</a>
-                    </li>
-                    <li>
+                      <li>
                         <a href="item-search.html"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR ITEM</a>
                     </li>
                 </ul>
